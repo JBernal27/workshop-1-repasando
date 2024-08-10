@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUD de Reservas</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Sistema de Reservas</h1>
+    <div class="container">
+
+      <div id="register-container">
+          <h2>Registro de Usuario</h2>
+          <form id="form-registro">
+            <input type="text" id="nombre" placeholder="Nombre" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="password" id="password" placeholder="Contraseña" required/>
+            <button type="submit">Registrarse</button>
+            <a href="" id="toggleLoginForm">¿Ya tienes una cuenta?</a>
+          </form>
+      </div>
+
+      <div id="login-container">
+          <h2>Iniciar Sesión</h2>
+          <form id="form-login">
+            <input type="email" id="email-login" placeholder="Email" required />
+            <input type="password" id="password-login" placeholder="Contraseña" required    />
+            <button type="submit">Iniciar Sesión</button>
+          </form>
+          <a href="" id="toggleRegisterForm">¿No tienes una cuenta?</a>
+      </div>
+
+      <div id="create-reservation-container">
+          <h2>Crear Reserva</h2>
+          <form id="form-reserva">
+            <input type="text" id="reserva" placeholder="Reserva" required />
+            <button type="submit">Crear Reserva</button>
+          </form>
+      </div>
+
+      <div id="create-admin-reservation-container">
+          <h2>Crear Reservas (Admin)</h2>
+          <form id="form-admin-reserva">
+            <button type="submit">Crear Reservas para Varios</button>
+          </form>
+      </div>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
